@@ -2,7 +2,7 @@
 #mlColorPicker{
 	border:1px solid black;
 	background-color:#DDDDDD;
-	padding:5px;
+	padding-bottom:5px;
 }
 
 #mlSelectedColorDiv{
@@ -11,16 +11,18 @@
 	height:20px;
 	border:solid 1px black;
 	background-color:white;
-	margin-right:5px;
+	margin:5px;
 }
 #mlSelectedColorText{
 	float:left;
 	width:60px;
 	border:solid 1px black;
 	font-size:small;
+	margin:5px;
 }
 #mlColors{
-	margin-top:30px;
+	float:left;
+	margin:0 5px 0 5px;
 	border-bottom:1px solid black;
 	border-right:1px solid black;
 	clear:both;
