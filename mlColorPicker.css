@@ -14,15 +14,13 @@
 	margin:5px;
 }
 #mlCloseColorDiv{
-  border:solid 1px black;
-  background-color:white;
-  cursor: pointer;
-  float: right;
-  height: 12px;
-  line-height: 9px;
-  margin:5px;
-  text-align: center;
-  width: 10px;
+  	cursor: pointer;
+	float: right;
+	font: 12px monospace;
+	margin: 5px;
+	text-align: center;
+	font: 12px monospace;
+  
 }
 #mlSelectedColorText{
 	float:left;
