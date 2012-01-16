@@ -6,6 +6,7 @@
 	var rgbRE = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/;
 	var colorRE = /^[a-fA-F0-9]{6}|[a-fA-F0-9]{3}$/;
 	var target = "";
+
 	function mouseEnterColor(event){
 		var rgbString = $(event.target).css("background-color");
 		var parts = rgbString.match(rgbRE);
@@ -60,13 +61,15 @@
 		});
 		$('.mlColor').bind("mouseenter", mouseEnterColor).click(mouseClickColor);
 		$("#mlSelectedColorText").keyup(textKeyUp);
-	  $("#mlColorPicker").hide()
-    $(document).bind('keyup', function(e){
-      if (e.keyCode == 27){
-        close();
-      }
-    });
-    $("#mlCloseColorDiv").click(close);
+	  	$("#mlColorPicker").hide()
+
+    	$(document).bind('keyup', function(e){
+      		if (e.keyCode == 27){
+        		close();
+      		}
+    	});
+		
+    	$("#mlCloseColorDiv").click(close);
 		$('#mlColorPicker,#mlColorPicker *').click(function(e){e.stopPropagation()})
 	}
 	
@@ -82,7 +85,7 @@
 		if (settings) $.extend(config, settings);
 		this.each(function() {
 			$(this).click(function(event){
-			  target = this;
+			  	target = this;
 				$("#mlColorPicker").hide()
 								   .css("top", event.pageY)
 								   .css("left", event.pageX)
